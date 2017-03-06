@@ -1,0 +1,61 @@
+%!TEX encoding = UTF-8 Unicode
+%!TEX program = xelatex
+
+\documentclass[master,pdf]{ustcthesis}
+% bachelor|master|doctor
+\usepackage{ustcextra}
+\graphicspath{{figures/}}
+\bibliographystyle{ustcauthoryear}
+% \bibliographystyle{ustcnumerical}
+
+\title{超浸润PVDF油水分离膜的制备\\及其分离性能研究}
+\author{刘平平}
+\major{材料工程}
+\advisor{\ 靳健\ 教授\ 吴亮\ 副教授}
+\submitdate{二〇一七年四月}
+%\secrettext{机密\quad 小于等于20年}   % 内部|秘密|机密，注释本行则不保密
+\depart{一二三系}
+
+\entitle{Preparation and Separation Performance of Superwetting PVDF Menmbrane}
+\enauthor{Pingping Liu}
+\enmajor{Material Engineering}
+\enadvisor{Prof. Jian Jin \ Prof. Liang Wu}
+\ensubmitdate{April, 2017}
+%\ensecrettext{Confidential\quad Less than or equal to 20 years}  % Internal|Secret|Confidential
+
+\begin{document}
+
+\maketitle
+
+% 硕博论文:
+%   frontmatter: 中文摘要、英文摘要、目录、符号说明
+%   mainmatter: 正文、参考文献
+%   appendix: 附录
+%   backmatter: 致谢、发表论文
+%
+
+\frontmatter
+\input{chapters/abstract}
+\tableofcontents
+%\listofalgorithms  % 算法索引，如不需要，可直接注释掉本行
+% \input{chapters/notation}
+
+\mainmatter
+\input{chapters/intro}
+\input{chapters/figure}
+\input{chapters/table}
+\input{chapters/math}
+\input{chapters/algorithm}
+\input{chapters/code}
+\input{chapters/crossref}
+\input{chapters/citation}
+\bibliography{bib/tex}
+
+\appendix
+\chapter{论文规范}
+
+\backmatter
+\input{chapters/acknowledgements}
+\input{chapters/publications}
+
+\end{document}
